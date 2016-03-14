@@ -11,6 +11,8 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.widget.TextView;
+
 /*
 import org.afree.chart.AFreeChart;
 import org.afree.chart.demo.DemoView;
@@ -36,26 +38,7 @@ public class MainActivity extends AppCompatActivity
 
         NavigationView navigationView = (NavigationView) findViewById(R.id.nav_view);
         navigationView.setNavigationItemSelectedListener(this);
-       /* DefaultPieDataset dataset = new DefaultPieDataset();
-        dataset.setValue("Мурзик", Integer.valueOf(20));
-        dataset.setValue("Барсик", Integer.valueOf(10));
-        dataset.setValue("Рыжик", Integer.valueOf(50));
-        dataset.setValue("Васька", Integer.valueOf(10));
-        dataset.setValue("Пушок", Integer.valueOf(10));
 
-        AFreeChart chart = ChartFactory.createPieChart(
-                "Победитель социалистического соревнования", dataset, true,
-                false, false);
-        PiePlot plot = (PiePlot) chart.getPlot();
-
-        plot.setSimpleLabels(true);
-
-        // plot.setLabelFont(new Font("SansSerif", Typeface.NORMAL, 8));
-        // plot.setCircular(false);
-        plot.setLabelLinksVisible(false);
-
-        DemoView pieview = (DemoView) findViewById(R.id.demoView1);
-        pieview.setChart(chart);*/
     }
 
     @Override
@@ -97,7 +80,12 @@ public class MainActivity extends AppCompatActivity
         Fragment myFragment = null;
         Class fragmentClass = null;
         int id = item.getItemId();
-
+        TextView welcome = (TextView) findViewById(R.id.welcome);
+        welcome.setText("");
+        TextView to = (TextView) findViewById(R.id.to);
+        to.setText("");
+        TextView book_app = (TextView) findViewById(R.id.book_app);
+        book_app.setText("");
         if (id == R.id.books) {
             fragmentClass = Books_Fragment.class;
         } else if (id == R.id.stats) {

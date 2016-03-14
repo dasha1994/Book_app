@@ -12,4 +12,37 @@
     tools:context="com.example.s4astya.nav.MainActivity"
     tools:showIn="@layout/app_bar_main">
 
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Welcome"
+        android:id="@+id/welcome"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="100dp"
+        android:textSize="40dp"
+        android:textColor="@color/mainFontColor"
+        android:fontFamily="sans-serif-condensed"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="to"
+        android:id="@+id/to"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:layout_below="@+id/welcome"
+        android:textSize="40dp"
+        android:textColor="@color/mainFontColor"
+        android:fontFamily="sans-serif-condensed"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Book_App"
+        android:id="@+id/book_app"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:layout_below="@+id/to"
+        android:textSize="40dp"
+        android:textColor="@color/mainFontColor"
+        android:fontFamily="sans-serif-condensed"/>
 </RelativeLayout>
